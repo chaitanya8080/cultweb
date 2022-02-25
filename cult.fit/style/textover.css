@@ -1,0 +1,20 @@
+
+
+#text_above{
+    /* height: 265px;
+    width: 600px; */
+    margin-top: -500px;
+    color: aliceblue;
+    font-size: 25px;
+    text-align: center;
+    font-family: Inter-Bold,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    transition: all 0.5s ease;
+   
+}
+#text_above:hover{
+    font-size: 28px;
+}
+
+#back_img{
+    z-index: -1;
+}

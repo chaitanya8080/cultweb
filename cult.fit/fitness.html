@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/slider.css">
+    <link rel="stylesheet" href="style/time.css">
+    <link rel="stylesheet" href="style/cultpass.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <style>
+        body{
+           
+    font-family: Inter-Bold,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif; 
+        }
+     #clock{
+         font-size: 40px;
+         color: white;
+         /* border: 1px solid red;    */
+     }
+     #live_time{
+         display:flex ;
+         justify-content:space-around ;
+         /* border: 1px solid red; */
+     }
+     #offer{
+         color: white;
+         margin-top: 30px;
+         height: 150px;
+         width: 600px;
+         /* border: 1px solid red; */
+     }
+     #time_clock{
+         margin-top: 80px;
+     }
+     #fitness_map>img{
+    width: 900px;
+    height: 500px;
+    margin: auto;
+   
+}
+#img_click1{
+    margin:auto;
+    margin-left: 160px;
+    /* border: 1px solid red; */
+    margin-top: -200px;
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    width: 1100px;
+    color: white;
+}
+#img_click1>div{
+   height: 250px;
+   width: 350px;
+   /* border: 1px solid red; */
+   /* transition: all 0.5s ease; */
+   
+}
+#img_click1>div>div>img{
+    margin: auto;
+    text-align: center;
+    height: 50%;
+    width: 50%;
+    border-radius: 5px; 
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+#img_click1>div>img:hover{
+    height: 345px;
+    width: 355px; 
+    box-shadow: rgba(240, 239, 239, 0.616) 0px 2px 4px, rgba(95, 88, 88, 0.3) 0px 7px 13px -3px, rgba(247, 235, 235, 0.432) 0px -3px 0px inset; 
+ }
+ ul{
+     color: beige;
+ }
+ li{
+     color: rgb(175, 167, 167);
+ }
+    
+    </style>
+</head>
+<body onload="realtimeClock()">
+    <div id="navbar">   
+    </div>
+    <div id="slider">
+        <figure>
+            <div id="slide">
+                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_1600,ar_1.67,q_auto:eco,dpr_1.25,f_auto,fl_progressive/image/vm/35b94b91-cae5-4fa6-b994-4c3133505287.jpg" height="630px" width="100%" alt="">
+            </div>
+            <div id="slide">
+                <img src="https://cdn.static-zoutons.com/images/originals/stores/CultFit1_1638942036.png" height="630px" width="100%"  alt="">
+            </div>
+            <div id="slide">
+                <img src="https://in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-cultfit-dance-fitness-2020-4-22-t-21-21-39.jpg" height="630px" width="100%"  alt="">
+            </div>
+            <div id="slide">
+                <img src="https://res.cloudinary.com/dwzmsvp7f/image/fetch/q_75,f_auto,w_1316/https%3A%2F%2Fmedia.insider.in%2Fimage%2Fupload%2Fc_crop%2Cg_custom%2Fv1587464264%2Fowhaqi58z29akhg4ukqb.jpg" height="630px" width="100%"  alt="">
+            </div>
+            <div id="slide">
+                <img src="https://miro.medium.com/max/12210/1*s38_lpOB_xJVjZCnsLlK-Q.jpeg" height="630px" width="100%"  alt="">
+            </div>
+        </figure>
+        <div id=""></div>
+    </div>
+      
+
+    <!-- time -->
+    <div id="time">
+        <div id="live_time">
+            <div id="offer">
+                <h1>The True New Year Sale</h1>
+                <h3>Extend your Subscription for 3 more months</h3>
+                <h3>beBetterEveryday</h3>
+            </div>
+            <div id="time_clock">
+                <div id="clock"></div>
+            </div>
+           
+        </div>
+    </div>
+
+    <div id="cultpass">
+        <div id="text_pass">
+            <h1>What You Get With Cult Pass</h1>
+        </div>
+        <div id="fitness_map"><img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1439,h_648,ar_2.220679012345679,c_fit/dpr_2//image/vm/60eb6360-1160-4123-a3ed-b3098118dac5.jpeg" alt=""   ></div>
+    
+    </div>
+     
+    <div><a href="https://www.cult.fit/cult/center/south%20takoganj/Cult-Madhu-Milan-Square/293">Centers Near You</a></div>
+
+   <div id="cultpass">
+    <div id="text_pass">
+        <h1>Cultpass</h1>
+        <h5>One Membership For All Your Fitness Needs</h5>
+    </div>
+
+    <div id="img_click">
+        <div><img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_404,ar_1.31,q_auto:eco,dpr_1.25,f_auto,fl_progressive//image/test/introducting-cult-pass/icp_cb.png" alt=""></div>
+        <div><img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_404,ar_1.31,q_auto:eco,dpr_1.25,f_auto,fl_progressive//image/test/introducting-cult-pass/icp_cg.png" alt=""></div>
+        <div><img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_404,ar_1.31,q_auto:eco,dpr_1.25,f_auto,fl_progressive//image/test/introducting-cult-pass/icp_cl.png" alt=""></div>
+    </div>
+    </div>
+    <div id="img_click1">
+        <div>
+            <div>
+                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_107,ar_3.59,q_auto:eco,dpr_1.25,f_auto,fl_progressive//image/test/brand-logo/cult-pass-elite-partial.png" alt="">
+                <h3>Starting at Rs. 1178/month</h3><br>
+                <h4>Unlimited access to</h4>
+                <ul>
+                    <li>At center and group classes</li><br>
+                    <li>All ELITE & PRO Gyms</li><br>
+                    <li>At home live workout</li>
+                </ul>
+            </div>
+
+        </div>
+         <div>
+             <div><img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_78,ar_2.63,q_auto:eco,dpr_1.25,f_auto,fl_progressive//image/test/brand-logo/cult-pass-pro-partial.png" alt="">
+                <h3>Starting at Rs. 714/month</h3><br>
+                <h4>Unlimited access to</h4>
+                <ul>
+                    <li>All PRO gyms</li><br>
+                    <li>4 serssions at ELITE and PRO</li><br>
+                    <li>At home live workout</li>
+                </ul>
+            </div>
+         </div>
+         <div>
+             <div><img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_85,ar_2.86,q_auto:eco,dpr_1.25,f_auto,fl_progressive//image/test/brand-logo/cult-pass-live-partial-4x.png" alt="">
+                <h3>Starting at Rs. 115/month</h3><br>
+                <h4>Unlimited access to</h4>
+                <ul>
+                    <li>At home workout</li><br>
+                    <li>Celebrity Workout</li><br>
+                    <li>Goal based & Meditation</li>
+                </ul>
+            </div>
+         </div>
+    </div>
+    
+</body>
+<div id="footer_div"></div>
+</html>
+<script type="module">
+    import navbar from "./components/navbar.js";
+    let nav_bar = document.getElementById("navbar");
+    nav_bar.innerHTML = navbar();
+
+</script>
+
+<script>
+    function realtimeClock(){
+        var rtclock = new Date();
+        var hours = rtclock.getHours();
+        var minutes = rtclock.getMinutes();
+        var seconds = rtclock.getSeconds();
+
+        var amPm = (hours<12) ?"AM":"PM";
+        hours = (hours>12) ? hours-12 : hours;
+
+        hours = ("0"+hours).slice(-2);
+        minutes = ("0"+ minutes).slice(-2);
+        seconds = ("0"+seconds).slice(-2);
+
+        document.getElementById('clock').innerHTML = hours+" : "+minutes+" : " +seconds+" : "+amPm;
+        var t = setTimeout(realtimeClock,500);
+    }
+    realtimeClock();
+</script>
+
+<script type="module">
+    import footer from "./components/footer.js";
+    let foot = document.getElementById("footer_div");
+    foot.innerHTML = footer();
+
+</script>

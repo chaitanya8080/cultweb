@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <style>
+     
+     #container{
+         display: flex;
+         margin: auto;
+         height: 500px;
+        width: 900px;
+        color: black;
+        /* border: 1px solid red; */
+        justify-content: space-around;
+     }
+    #cont{
+        height: 250px;
+        width: 400px;
+        display: flex;
+        justify-content: space-around;
+        /* border: 1px solid red; */
+        overflow-y: scroll;
+    }
+    #left{
+        height: 150px;
+        width: 120px;
+    }
+    #left>#images{
+        height: 100%;
+        width: 100%;
+    }
+    #total{
+        height: 600px;
+        width: 600px;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-around;
+    }
+    #pric{
+      color: black;
+    }
+    #checkout{
+      margin-top: 100px;
+      height: 45px;
+      width: 140px;
+      justify-content: center;
+      background-color: #f44;
+      border-radius: 18px;
+      color: aliceblue;
+
+    }
+    .left_div{
+      height: 400px;
+      width: 500px;
+    }
+    </style>
+  </head>
+  <body>
+      <div id="container">
+        <div id="cont">
+            <div id="left"></div>
+            <div id="right"></div>
+        </div>
+
+        <div id="total">
+          
+            <div class="left_div">
+            
+           
+        
+              <div style="margin-top: 25px; margin-bottom: 10px;">shipping address</div>
+              <div class="bottomvar">
+                  
+                  <select name="" id="Email" style="grid-area: Email;">
+                      <option value="india">India</option>
+                  </select>
+                  <input id="Fname" placeholder="First Name" >
+                  <input id="Lname" placeholder="Last Name" >
+                  <input id="Address" placeholder="Address" >
+                  <input id="PC" placeholder="Postal Code"  type="number">
+                  <input id="City" placeholder="City" >
+                  
+                  <select id="Region" style="grid-area:Region;" >
+                      <option value="">State</option>
+                      <option value="">Jharkhand</option>
+                      <option value="">Bihar</option>
+                      <option value="">Uttar Pradesh</option>
+                      <option value="">Chattishgard</option>
+                      <option value="">Odissa</option>
+                      <option value="">Hydrabad</option>
+                      <option value="">Banglore</option>
+                      <option value="">Goa</option>
+                      <option value="">Maharastra</option>
+                      <option value="">Gujrat</option>
+                      <option value="">Jammu & Kashmir</option>
+                      <option value="">Laddak</option>
+                      <option value="">Punjab</option>
+                      <option value="">Haryana</option>
+                      <option value="">Madhya prasesh</option>
+                  </select>
+                  <input id="Phone" placeholder="Phone" style="grid-area:Phone ;" type="number">
+              
+          </div>
+          <a href="payment.html"><button id="checkout">Checkout</button></a>
+          </div>
+    
+
+          
+          
+        </div>
+      </div>
+     
+  </body>
+</html>
+<script>
+  
+  data = JSON.parse(localStorage.getItem("shirtsitem"));
+  console.log(data);
+
+  display_show(data);
+  function display_show(data) {
+   
+    data.forEach(function (el){
+        console.log(el);
+        let divRight = document.getElementById("right");
+    let image = document.createElement("img");
+    image.setAttribute("id","images");
+    image.src = el.imgurl;
+
+    document.getElementById("left").append(image);
+
+    let p1brand = document.createElement("p");
+    p1brand.textContent = el.brand;
+   
+   
+    let price = document.createElement("p");
+    price.textContent = "₹" + el.price;
+
+    let p2cut = document.createElement("p");
+    p2cut.textContent = "₹" + el.cutprice;
+
+    let poff = document.createElement("p");
+    let disc =(el.cutprice - el.price) / el.cutprice;
+    let disc2 = Math.floor(disc * 100);
+    poff.textContent = disc2 + "% OFF";
+
+    divRight.append(p1brand,price,p2cut,poff);  
+    });
+
+  }
+ 
+
+//   var arraydata = [];
+//   function add() {
+//     arraydata.push(data_display);
+//     localStorage.setItem("bag", JSON.stringify(arraydata));
+//     console.log(arraydata);
+//   }
+//   function add_to() {
+//     arraydata.push(data_display);
+//     localStorage.setItem("bag", JSON.stringify(arraydata));
+//     console.log(arraydata);
+//     window.location.href = "./cart.html";
+//   }
+</script>

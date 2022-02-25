@@ -1,0 +1,79 @@
+
+#footer_div{
+    display: flex;
+    height: 350px;
+    width: 100%;
+    background-color: black;
+    color: gray;
+   
+}
+
+#logo_info{
+    flex:2;
+    /* border: 1px solid red; */
+    /* margin: auto; */
+
+}
+#terms{
+    flex:3;
+    /* border: 1px solid red; */
+    color: gray;
+}
+#company{
+    flex:2;
+    /* border: 1px solid red; */
+    align-content: space-around;
+    color: gray;
+}
+#logo{
+    margin: 100px 0px 0px 70px;
+   height: 40px;
+   width:120px;
+   /* border: 1px solid red; */
+   cursor: pointer;
+}
+#logo>a>img{
+    height: 100%;
+    width: 100%;
+}
+#footer_text{
+    height: 100px;
+    width:300px;
+    /* border: 1px solid red; */
+    margin: 10px 0px 0px 70px;
+    cursor: pointer;
+}
+#footer_text>p{
+    font-size: 15px;
+
+}
+#terms>div{
+   
+    display: flex;
+    justify-content: space-around;
+     color: gray;
+     cursor: pointer;
+}
+#conditions{
+    margin-top: 30px;
+}
+#conditions>div>p{
+    margin-top: 50px;
+}
+
+#company>div{
+    margin-left: 200px;
+    margin-top: 30px;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+#company>div>img{
+    height: 100%;
+    width: 100%;
+}
+#fb_image{
+    
+    display: flex;
+    margin-right: -10px;
+}

@@ -1,0 +1,31 @@
+
+
+  #text{
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    color: aliceblue;
+    text-align: center;
+    font-size: 28px;
+    font-family: Inter-Bold,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+}
+
+
+#img1{
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    height: 382px;
+    width: 1300px;
+}
+#img1>div{
+   height: 370px;
+   width: 390px;
+   
+}
+#img1>div>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}

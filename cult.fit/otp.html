@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+      
+        <link rel="stylesheet" href="style/signUp.css">
+        <link rel="stylesheet" href="style/login.css">
+        <link rel="stylesheet" href="style/navbar.css">
+        <link rel="stylesheet" href="style/footer.css">
+        <style>
+         
+        </style>
+    </head>
+
+    <body>
+        <div id="navbar"></div>
+        <div id="nav"></div>
+        
+        <div id="login-form-div">
+
+            <form id="login">
+                <!--Write form input elements here-->
+                   
+                     <input type="text" placeholder="OTP" id="password">
+                    <input type="submit" value="submit" id="submit">
+               
+            </form>
+
+        </div>
+        <div id="footer_div"></div>
+    </body>
+  
+
+</html>
+<script type="module" > 
+    import navbar from "./scripts/index.js"
+  
+    let nav = document.getElementById("nav");
+    nav.innerHTML = navbar();
+
+</script>
+
+<script>
+    document.getElementById("login").addEventListener("submit",addlogin);
+
+    function addlogin(event){
+        event.preventDefault();
+        let flag = false;
+        let pass = document.getElementById("password").value;
+
+    if(pass== ""){
+        alert("write otp");
+        return;
+    }
+        if(pass==="1234"){
+              flag = true;
+              alert(" Payment Successful");
+        window.location.href = "index.html";
+        }
+    else{
+        alert("Invalid credentials"); 
+    }
+}
+
+</script>
+
+<script type="module">
+    import navbar from "./components/navbar.js";
+    let nav_bar = document.getElementById("navbar");
+    nav_bar.innerHTML = navbar();
+
+</script>
+<script type="module">
+    import footer from "./components/footer.js";
+    let foot = document.getElementById("footer_div");
+    foot.innerHTML = footer();
+
+</script>
